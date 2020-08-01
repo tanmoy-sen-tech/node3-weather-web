@@ -33,7 +33,9 @@ header a {
     margin: 0 8px;
     text-decoration: none;
 }
-
+header a:hover, header a:focus-within {
+border-bottom: 2px solid cornflowerblue;
+}
 .potrait {
     width: 250px;
 }
@@ -46,7 +48,7 @@ input {
 button{
     cursor: pointer;
     border:1px solid #888888;
-    background: #888888;
+    background: cornflowerblue;
     color:white;
     padding: 8px;
 }
