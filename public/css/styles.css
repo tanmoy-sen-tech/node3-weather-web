@@ -8,8 +8,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.main-content{
-    flex-grow:1;
+
+.main-content {
+    flex-grow: 1;
 }
 
 footer {
@@ -28,35 +29,51 @@ h1 {
     margin-bottom: 16px;
 }
 
+.nav-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+}
+
 header a {
     color: #888888;
     margin: 0 8px;
     text-decoration: none;
 }
-header a:hover, header a:focus-within, header a:active {
-border-bottom: 2px solid #008f90;
+
+header a:hover, header a:focus-within, header a:active {}
+
+header a.active {
+    border-bottom: 2px solid #008f90;
 }
+
 .potrait {
     width: 250px;
 }
-.landscape{
+
+.landscape {
     width: 100%;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-input {
+
+.location-search {
     border: 1px solid gray;
     padding: 8px;
     margin: 10px 0px;
     width: 100%;
     border-radius: 25px;
     outline: none;
+    background: url(/img/location.jpg) no-repeat right;
+    background-size: 25px 25px;
+    background-position: right;
 }
 
-button{
+button {
     cursor: pointer;
     border: 1px solid #888888;
     background: #008f90;
