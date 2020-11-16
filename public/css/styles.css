@@ -33,22 +33,36 @@ header a {
     margin: 0 8px;
     text-decoration: none;
 }
-header a:hover, header a:focus-within {
-border-bottom: 2px solid cornflowerblue;
+header a:hover, header a:focus-within, header a:active {
+border-bottom: 2px solid #008f90;
 }
 .potrait {
     width: 250px;
 }
-
+.landscape{
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 input {
-    border:1px solid #cccccc;
+    border: 1px solid gray;
     padding: 8px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
 }
 
 button{
     cursor: pointer;
-    border:1px solid #888888;
-    background: cornflowerblue;
-    color:white;
+    border: 1px solid #888888;
+    background: #008f90;
+    color: white;
     padding: 8px;
+    min-width: 20%;
+    border-radius: 25px;
+    outline: none;
 }
